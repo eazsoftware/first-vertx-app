@@ -20,7 +20,7 @@ public class MyFirstVerticle extends AbstractVerticle {
                             + "Vert.x 3 application</h1>");
                 })
                 .listen(
-                        config().getInteger("http.port", port),
+                        config().getInteger("http.port", 8081),
                         result -> {
                             if (result.succeeded()) {
                                 fut.complete();
