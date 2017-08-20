@@ -1,0 +1,7 @@
+**/.settings/
+**/target/
+**/.settings
+**/.classpath
+**/.project
+**/.vertx
+**/nb-configuration.xml
