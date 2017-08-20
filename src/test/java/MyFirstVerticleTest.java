@@ -24,12 +24,12 @@ public class MyFirstVerticleTest {
     public void setUp(TestContext context) throws IOException {
         vertx = Vertx.vertx();
 
-    // Let's configure the verticle to listen on the 'test' port (randomly picked).
+        // Let's configure the verticle to listen on the 'test' port (randomly picked).
         // We create deployment options and set the _configuration_ json object:
         ServerSocket socket = new ServerSocket(0);
         port = socket.getLocalPort();
         socket.close();
-        
+
         System.out.println("Port: " + port);
 
         DeploymentOptions options
