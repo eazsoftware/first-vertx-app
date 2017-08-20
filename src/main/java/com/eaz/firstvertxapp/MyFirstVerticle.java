@@ -9,7 +9,7 @@ import io.vertx.core.Future;
  */
 public class MyFirstVerticle extends AbstractVerticle {
 
-    private Integer port = 8081;
+    private final Integer port = 8081;
     
     @Override
     public void start(Future<Void> fut) {
