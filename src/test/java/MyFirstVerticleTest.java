@@ -52,7 +52,7 @@ public class MyFirstVerticleTest {
         vertx.createHttpClient().getNow(port, "localhost", "/",
                 response -> {
                     response.handler(body -> {
-                        context.assertTrue(body.toString().contains("Hello fails"));
+                        context.assertTrue(body.toString().contains("Hello"));
                         async.complete();
                     });
                 });
